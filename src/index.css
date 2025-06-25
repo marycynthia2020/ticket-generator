@@ -7,3 +7,6 @@ body {
   min-height: 100vh;
   width: 100vw;
 }
+.ticket {
+  background-size: 100% 100%;
+}

@@ -10,7 +10,7 @@ const Form = () => {
         <form action="" className='w-full md:w-1/2 xl:w-[32%] mx-auto'>
             <div className='flex flex-col gap-2 mb-6'>
                 <label htmlFor="avatar" className='text-xl'>Upload Avatar</label>
-                <div className=' bg-gray-800 flex flex-col items-center h-32 p-4 border border-dashed rounded-md'>
+                <div className='  flex flex-col items-center h-32 p-4 border border-dashed rounded-md'>
                     <div className=' border border-gray-600 h-12 w-12 rounded-md flex items-center justify-center'>
                         <img src={uploadIcon} alt="upload icon" />
                     </div>
@@ -34,7 +34,7 @@ const Form = () => {
                 <label htmlFor="github">GitHub Username</label>
                 <input id="github" type="text" className='rounded-lg  border border-gray-400 h-12 p-3 bg-transparent' placeholder='@yourusername' />
             </div>
-            <button className='bg-[#F57261] h-10 rounded-lg w-full text-[#0C082B] font-bold text-lg z-[999] relative'>Generate My Ticket</button>
+            <button className='bg-[#F57261] py-3 rounded-lg w-full text-[#0C082B] font-bold text-xl z-[999] relative'>Generate My Ticket</button>
         </form>
     </div>
   )

@@ -13,7 +13,8 @@ export default {
         mobile: `url("/background-mobile.png")`,
         desktop: `url("/background-desktop.png")`,
         tablet: `url("/background-tablet.png")`,
-        lines: `url("/pattern-lines.svg")`
+        lines: `url("/pattern-lines.svg")`,
+        ticket: `url("/pattern-ticket.svg")`
       }
     },
   },
