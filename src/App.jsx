@@ -9,14 +9,14 @@ import { useState } from "react"
 
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false)
-   const [avatar, setAvatar] = useState()
+  //  const [avatar, setAvatar] = useState()
     const [formData, setFormData] = useState({
+      avatar: null,
         fullName: "",
         email: "",
         githubUserName: "",
-        
     })
-    console.log(avatar)
+  
   return (
     <div className=" font-inconsolatao  text-white w-full bg-mobile md:bg-tablet xl:bg-tablet bg-cover">
       <div className="  w-full  max-w-[1440px] mx-auto  min-h-screen bg-lines py-12 md:pt-8">
@@ -24,8 +24,7 @@ function App() {
         <img src={mobileBottomLine} alt="" className="xl:hidden absolute bottom-0 left-0" />
         <img src={desktopBottomLine} alt="" className="hidden xl:block absolute bottom-0 left-0 "/>
         <Logo />
-        {!isSubmitted && <Form  formData ={formData} setFormData={setFormData} setIsSubmitted ={setIsSubmitted} setAvatar={setAvatar} avatar={avatar}/>}
-        {isSubmitted && <Ticket formData={formData} avatar={avatar} />}
+        {isSubmitted ? <Ticket formData={formData} /> : <Form  formData ={formData} setFormData={setFormData} setIsSubmitted ={setIsSubmitted} />}
       </div>
     </div>
   )
